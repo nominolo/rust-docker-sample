@@ -1,0 +1,8 @@
+FROM hello-web:builder-dev
+
+COPY ./Cargo.* ./
+COPY ./src ./src
+
+RUN cargo build
+
+CMD [ "target/debug/hello-web" ]

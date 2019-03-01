@@ -1,0 +1,9 @@
+# This is the runtime base image. Install any runtime dependencies here.
+# E.g., openssl/boringssl and friends
+
+FROM debian:stretch
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+		ca-certificates \
+		curl \
+        && rm -rf /var/lib/apt/lists/*

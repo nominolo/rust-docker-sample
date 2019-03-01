@@ -1,0 +1,7 @@
+FROM hello-web:runtime-base
+
+WORKDIR /root/
+
+COPY hello-web .
+
+CMD [ "./hello-web" ]

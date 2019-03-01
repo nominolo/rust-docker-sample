@@ -1,8 +1,11 @@
 [package]
-name = "test-app"
+name = "hello-web"
 version = "0.1.0"
 authors = ["Thomas Schilling <thomas.schilling@adnovum.ch>"]
+edition = "2018"
 
 [dependencies]
-hyper = "0.11"
-futures = "0.1.14"
+actix-web = "0.7"
+
+log = "0.4"
+env_logger = "0.6"

@@ -1,9 +1,0 @@
-FROM rust-base:alpine
-
-ADD build/cache/.cargo /root/.cargo
-
-COPY test-app /app
-
-ADD build/app/ /app/target/
-
-RUN cd /app && cargo build --release
